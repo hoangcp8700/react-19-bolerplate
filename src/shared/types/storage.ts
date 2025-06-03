@@ -1,0 +1,11 @@
+export enum LocalStorageKeys {
+  AUTH_ACCESS_TOKEN = 'AUTH_ACCESS',
+  AUTH_REFRESH_TOKEN = 'AUTH_REFRESH',
+  AUTH_EXPIRY = 'AUTH_EXPIRY',
+
+  USER_DATA = 'USER_DATA',
+}
+
+export enum SessionStorageKeys {
+  TEMP_REDIRECT_URL = 'TEMP_REDIRECT_URL',
+}
