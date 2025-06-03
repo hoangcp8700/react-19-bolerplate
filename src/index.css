@@ -56,6 +56,62 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: none;
+  border-width: thin;
+  padding: 0px;
+  margin: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(
+    to right,
+    hsl(var(--primary)) 0%,
+    hsl(var(--primary)) var(--percent),
+    #f3f4fa var(--percent),
+    #f3f4fa 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+/* The slider thumb (rectangular and teal) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 30px;
+  background-color: hsl(var(--primary));
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 8px;
+  height: 30px;
+  background-color: hsl(var(--primary));
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -1,11 +1,11 @@
-import { createRootRoute, Link, Outlet } from '@tanstack/react-router';
+import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
   component: () => (
     <>
       <header>
-        {' '}
-        <div className="p-2 flex gap-2">
+        {" "}
+        <div className="flex gap-2 p-2">
           <Link to="/" className="[&.active]:font-bold">
             Home
           </Link>
@@ -18,11 +18,7 @@ export const Route = createRootRoute({
           <Link to="/products" className="[&.active]:font-bold">
             Products
           </Link>
-          <Link
-            to={`/products/$id`}
-            params={{ id: '3' }}
-            className="[&.active]:font-bold"
-          >
+          <Link to={`/products/$id`} params={{ id: "3" }} className="[&.active]:font-bold">
             Products 3
           </Link>
           <Link to="/products" className="[&.active]:font-bold">

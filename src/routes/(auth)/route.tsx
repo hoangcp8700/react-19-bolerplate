@@ -1,6 +1,6 @@
-import { createFileRoute, Link, Outlet } from '@tanstack/react-router';
+import { createFileRoute, Link, Outlet } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/(auth)')({
+export const Route = createFileRoute("/(auth)")({
   component: RouteComponent,
 });
 
@@ -8,8 +8,8 @@ function RouteComponent() {
   return (
     <div>
       <header>
-        {' '}
-        <div className="p-2 flex gap-2">
+        {" "}
+        <div className="flex gap-2 p-2">
           <Link to="/" className="[&.active]:font-bold">
             User
           </Link>

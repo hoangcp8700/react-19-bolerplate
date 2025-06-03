@@ -1,7 +1,7 @@
 // import { getProductDetail } from '@/api/products';
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/(public)/products/$id')({
+export const Route = createFileRoute("/(public)/products/$id")({
   component: RouteComponent,
   // loader: ({ params }) => getProductDetail(params.id),
 });

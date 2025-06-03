@@ -1,1 +1,1 @@
-export * from './queryString';
+export * from "./queryString";
